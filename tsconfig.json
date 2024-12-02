@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@assets/*": ["./assets/*"],
+      "@constants/*":["@constants/*"],
+      "@classes/*": ["./@classes/*"],
+      "@components/*":["./components/*"],
+      "@actions/*":["./@actions/*"],
+      "@utils/*":["./@utils/*"],
+      "@hooks/*":["./hooks/*"],
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/app/_Layout.js",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}
